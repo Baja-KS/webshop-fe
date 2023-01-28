@@ -24,22 +24,6 @@ const Header = () => (
               <i className="fa fa-shopping-cart"></i> <span className="ms-1">My cart </span> 
           </a>
               </div>
-      </div> 
-      <div className="col-lg-5 col-md-12 col-12">
-          <form action="#" className="">
-                  <div className="input-group">
-                  <input type="search" className="form-control" style={{width:"55%"}} placeholder="Search" />
-                  <select className="form-select">
-                      <option value="">All type</option>
-                      <option value="codex">Special</option>
-                      <option value="comments">Only best</option>
-                      <option value="content">Latest</option>
-                  </select>
-                  <button className="btn btn-primary">
-                      <i className="fa fa-search"></i> 
-                  </button>
-                  </div> 
-              </form>
       </div>
       
       </div> 

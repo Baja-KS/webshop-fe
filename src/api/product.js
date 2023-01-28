@@ -30,4 +30,15 @@ async function search(query,page = 0,perPage = 5,category = null,minPrice = null
     }
 }
 
-export {search};
+async function details(id) {
+    try {
+        const response = await api.get(`${paths.details}/${id}`);
+        const data = response.data;
+        data.imgUrl = `${process.env.REACT_APP_API_BASE_URL}${paths.content}/${data.img}`;
+        return data;
+    } catch (e) {
+        return e;
+    }
+}
+
+export {search,details};
