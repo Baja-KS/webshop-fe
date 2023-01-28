@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Product.css';
+import {Link} from "react-router-dom";
 // props: name,price,discount?,imgUrl
 const Product = (props) => {
   let price = props.price
@@ -13,9 +14,11 @@ const Product = (props) => {
   return (
     <div className="col-lg-4 col-md-6 col-sm-6">
       <figure className="card card-product-grid">
-        <div className="img-wrap">
-          <img src={props.imgUrl}/>
-        </div>
+        <Link to={`/details/${props.id}`}>
+          <div className="img-wrap">
+            <img src={props.imgUrl}/>
+          </div>
+        </Link>
         <figcaption className="info-wrap border-top">
           <div className="price-wrap">
           <strong className="price">${price}</strong>

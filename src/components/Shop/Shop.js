@@ -107,7 +107,7 @@ const Shop = () => {
             </div>
             </header>
             <div className='row'>
-                {products.map((item,i) => (<Product key={item.id} name={item.name} imgUrl={item.imgUrl} discount={item.discount} price={item.price} stock={item.stock}></Product>))}
+                {products.map((item) => (<Product key={item.id} id={item.id} name={item.name} imgUrl={item.imgUrl} discount={item.discount} price={item.price} stock={item.stock}></Product>))}
             </div>
           
       

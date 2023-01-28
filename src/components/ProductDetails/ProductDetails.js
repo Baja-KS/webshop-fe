@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import './ProductDetails.css';
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import {details} from "../../api/product";
 
 const ProductDetails = (props) => {
@@ -16,6 +16,7 @@ const ProductDetails = (props) => {
   },[]);
   return product && (
     <div className="home-section">
+      <Link to="/"><button type={"button"}>Back to shop</button></Link>
         {product.name}
     </div>
   );
