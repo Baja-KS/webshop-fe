@@ -3,40 +3,40 @@ import PropTypes from 'prop-types';
 import './Header.css';
 
 const Header = () => (
-  <header class="section-header">	
-  <section class="header-main">
-  <div class="container">
-      <div class="row gy-3 align-items-center">
-      <div class="col-lg-2 col-sm-4 col-4">
-          <a href="http://therichpost.com" class="navbar-brand">
+  <header className="section-header">	
+  <section className="header-main">
+  <div className="container">
+      <div className="row gy-3 align-items-center">
+      <div className="col-lg-2 col-sm-4 col-4">
+          <a href="http://therichpost.com" className="navbar-brand">
           RichEcom
           </a> 
       </div>
-      <div class="order-lg-last col-lg-5 col-sm-8 col-8">
-          <div class="float-end">
-          <a href="#" class="btn btn-light"> 
-              <i class="fa fa-user"></i>  <span class="ms-1 d-none d-sm-inline-block">Sign in  </span> 
+      <div className="order-lg-last col-lg-5 col-sm-8 col-8">
+          <div className="float-end">
+          <a href="#" className="btn btn-light"> 
+              <i className="fa fa-user"></i>  <span className="ms-1 d-none d-sm-inline-block">Sign in  </span> 
           </a>
-          <a href="#" class="btn btn-light"> 
-              <i class="fa fa-heart"></i>  <span class="ms-1 d-none d-sm-inline-block">Wishlist</span>   
+          <a href="#" className="btn btn-light"> 
+              <i className="fa fa-heart"></i>  <span className="ms-1 d-none d-sm-inline-block">Wishlist</span>   
           </a>
-          <a data-bs-toggle="offcanvas" href="#offcanvas_cart" class="btn btn-light"> 
-              <i class="fa fa-shopping-cart"></i> <span class="ms-1">My cart </span> 
+          <a data-bs-toggle="offcanvas" href="#offcanvas_cart" className="btn btn-light"> 
+              <i className="fa fa-shopping-cart"></i> <span className="ms-1">My cart </span> 
           </a>
               </div>
       </div> 
-      <div class="col-lg-5 col-md-12 col-12">
-          <form action="#" class="">
-                  <div class="input-group">
-                  <input type="search" class="form-control" style={{width:"55%"}} placeholder="Search" />
-                  <select class="form-select">
+      <div className="col-lg-5 col-md-12 col-12">
+          <form action="#" className="">
+                  <div className="input-group">
+                  <input type="search" className="form-control" style={{width:"55%"}} placeholder="Search" />
+                  <select className="form-select">
                       <option value="">All type</option>
                       <option value="codex">Special</option>
                       <option value="comments">Only best</option>
                       <option value="content">Latest</option>
                   </select>
-                  <button class="btn btn-primary">
-                      <i class="fa fa-search"></i> 
+                  <button className="btn btn-primary">
+                      <i className="fa fa-search"></i> 
                   </button>
                   </div> 
               </form>
@@ -46,40 +46,40 @@ const Header = () => (
   </div> 
   </section> 
 
-  <nav class="navbar navbar-light bg-gray-light navbar-expand-lg">
-  <div class="container">
-      <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_main">
-      <span class="navbar-toggler-icon"></span>
+  <nav className="navbar navbar-light bg-gray-light navbar-expand-lg">
+  <div className="container">
+      <button className="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_main">
+      <span className="navbar-toggler-icon"></span>
       </button>
       
-      <div class="collapse navbar-collapse" id="navbar_main">
-      <ul class="navbar-nav">
-          <li class="nav-item">
-          <a class="nav-link ps-0" href="#"> Categories </a>
+      <div className="collapse navbar-collapse" id="navbar_main">
+      <ul className="navbar-nav">
+          <li className="nav-item">
+          <a className="nav-link ps-0" href="#"> Categories </a>
           </li>
-          <li class="nav-item">
-          <a class="nav-link" href="#">Hot offers</a>
+          <li className="nav-item">
+          <a className="nav-link" href="#">Hot offers</a>
           </li>
-          <li class="nav-item">
-          <a class="nav-link" href="#">Gift boxes</a>
+          <li className="nav-item">
+          <a className="nav-link" href="#">Gift boxes</a>
           </li>
-          <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <li className="nav-item">
+          <a className="nav-link" href="#">Projects</a>
           </li>
-          <li class="nav-item">
-          <a class="nav-link" href="#">Menu item</a>
+          <li className="nav-item">
+          <a className="nav-link" href="#">Menu item</a>
           </li>
-          <li class="nav-item">
-          <a class="nav-link" href="#">Menu name</a>
+          <li className="nav-item">
+          <a className="nav-link" href="#">Menu name</a>
           </li>
-          <li class="nav-item dropdown">
-          <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown">
+          <li className="nav-item dropdown">
+          <a className="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown">
               Others
           </a>
-          <ul class="dropdown-menu">
-              <li> <a class="dropdown-item" href="#">Submenu one </a> </li>
-              <li> <a class="dropdown-item" href="#">Submenu two</a> </li>
-              <li> <a class="dropdown-item" href="#">Submenu three</a> </li>
+          <ul className="dropdown-menu">
+              <li> <a className="dropdown-item" href="#">Submenu one </a> </li>
+              <li> <a className="dropdown-item" href="#">Submenu two</a> </li>
+              <li> <a className="dropdown-item" href="#">Submenu three</a> </li>
           </ul>
           </li>
       </ul>

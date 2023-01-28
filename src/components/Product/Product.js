@@ -6,27 +6,27 @@ const Product = (props) => {
   let price = props.price
   let discountHtml;
   if (props.discount) {
-    discountHtml = (<del class="price-old">${props.price}</del>);
+    discountHtml = (<del className="price-old">${props.price}</del>);
     price = props.price-(props.price*props.discount/100);
   }
   return (
-    <div class="col-lg-4 col-md-6 col-sm-6">
-    <figure class="card card-product-grid">
-    <div class="img-wrap"> 
-    <img src={props.imgUrl}/> 
+    <div className="col-lg-4 col-md-6 col-sm-6">
+      <figure className="card card-product-grid">
+        <div className="img-wrap">
+          <img src={props.imgUrl}/>
+        </div>
+        <figcaption className="info-wrap border-top">
+          <div className="price-wrap">
+          <strong className="price">${price}</strong>
+          {discountHtml}
+          </div>
+          <p className="title mb-2">{props.name}</p>
+
+          <a href="#" className="btn btn-primary">Add to cart</a>
+          <a href="#" className="btn btn-light btn-icon"> <i className="fa fa-heart"></i> </a>
+        </figcaption>
+      </figure>
     </div>
-    <figcaption class="info-wrap border-top">
-    <div class="price-wrap">
-    <strong class="price">${price}</strong>
-    {discountHtml}
-    </div> 
-    <p class="title mb-2">{props.name}</p>
-    
-    <a href="#" class="btn btn-primary">Add to cart</a>
-    <a href="#" class="btn btn-light btn-icon"> <i class="fa fa-heart"></i> </a>
-    </figcaption>
-    </figure>
-  </div> 
   );
 };
 
