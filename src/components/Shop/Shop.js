@@ -76,8 +76,8 @@ const Shop = () => {
             <SearchPriceFilter handlers={{search:updateSearchQuery,minPrice:updateMinPrice,maxPrice:updateMaxPrice}}></SearchPriceFilter>
 
             <CategoryFilterList categories={categories} state={{current:selectedCategory,update:updateSelectedCategory}}></CategoryFilterList>
-        
-            <PerPage state={{current:perPage,update:updatePerPage}} values={[1,5,10,15,20]}></PerPage>
+
+            <PerPage state={{current:perPage,update:updatePerPage}} updatePage={updatePage} values={[1,5,10,15,20]}></PerPage>
         
             
         
@@ -107,7 +107,7 @@ const Shop = () => {
             </div>
             </header>
             <div className='row'>
-                {products.map((item,i) => (<Product key={item.id} name={item.name} imgUrl={item.imgUrl} discount={item.discount} price={item.price}></Product>))}
+                {products.map((item,i) => (<Product key={item.id} name={item.name} imgUrl={item.imgUrl} discount={item.discount} price={item.price} stock={item.stock}></Product>))}
             </div>
           
       

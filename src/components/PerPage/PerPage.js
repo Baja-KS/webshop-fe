@@ -7,7 +7,7 @@ const PerPage = (props) => {
     // const { current , update } = props.state;
     const items = [];
     props.values.forEach((item,i) => {
-        items.push((<PerPageItem key={i} value={item} state={props.state}></PerPageItem>));
+        items.push((<PerPageItem key={i} value={item} state={props.state} updatePage={props.updatePage}></PerPageItem>));
     });
     return (
         <article className="filter-group">

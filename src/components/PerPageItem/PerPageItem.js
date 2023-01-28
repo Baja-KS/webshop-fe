@@ -7,6 +7,7 @@ const PerPageItem = (props) => {
     const {current,update} = props.state;
     const handler = () => {
         update(value);
+        props.updatePage(0);
     }
     return (
         <label className="checkbox-btn">
