@@ -18,7 +18,7 @@ const SearchPriceFilter = (props) => {
   return (
     <article className="filter-group">
         <div className="card-header">
-            <a href="#" className="title" data-bs-toggle="collapse" data-bs-target="#collapse_aside2">
+            <a href="#" className="title text-light" data-bs-toggle="collapse" data-bs-target="#collapse_aside2">
             <i className="icon-control fa fa-chevron-down"></i>  Filter
             </a>
         </div>
@@ -40,8 +40,8 @@ const SearchPriceFilter = (props) => {
                             <input className="form-control" name="maxPrice" id="maxPrice" placeholder="$1,0000" type="number"/>
                         </div>
                     </div>
-                    <button className="btn btn-light w-100" type="submit" value="apply">Apply</button>
-                    <button className="btn btn-light w-100" type="submit" value="clear">Clear</button>
+                    <button className="btn btn-gray-dark w-100 m-1" type="submit" value="apply">Apply</button>
+                    <button className="btn btn-gray-dark w-100 m-1" type="submit" value="clear">Clear</button>
                 </div>
             </form>
         </div>

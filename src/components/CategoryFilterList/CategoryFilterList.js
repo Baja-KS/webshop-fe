@@ -6,7 +6,7 @@ const CategoryFilterList = (props) => {
   return (
     <article className="filter-group">
       <header className="card-header">
-        <a href="#" className="title" data-bs-toggle="collapse" data-bs-target="#collapse_aside1">
+        <a href="#" className="title text-light" data-bs-toggle="collapse" data-bs-target="#collapse_aside1">
           <i className="icon-control fa fa-chevron-down"></i>   Categories
         </a>
       </header>

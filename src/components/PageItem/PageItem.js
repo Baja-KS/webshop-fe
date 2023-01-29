@@ -10,10 +10,10 @@ const PageItem = (props) => {
     };
     let link = (<a className="page-link" href="#" onClick={handler}>{number}</a>);
     if (isActive) {
-        link = (<span className="page-link">{number}</span>);
+        link = (<span className="page-link page-active">{number}</span>);
     }
     return (
-        <li className={`page-item ${isActive? 'active' : ''}`}>
+        <li className={`page-item ${isActive? 'page-active' : ''}`}>
             {link}
         </li>
     );

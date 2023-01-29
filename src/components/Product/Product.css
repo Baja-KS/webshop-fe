@@ -1,1 +1,22 @@
-.Product {}
+.bg-light-custom {
+    background-color: #797979;
+}
+.img-wrap {
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+.product-image {
+    max-width: 25rem;
+    transition: all 0.4s;
+    display: block;
+    filter: saturate(0.4);
+}
+
+.text-dark-custom {
+    color: #030303 !important;
+}
+.price-old {
+    color: #363636 !important;
+    font-size: 2rem !important;
+    margin-left: 10px !important;
+}

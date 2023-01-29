@@ -13,21 +13,20 @@ const Product = (props) => {
   let stock = props.stock ?? 0;
   return (
     <div className="col-lg-4 col-md-6 col-sm-6">
-      <figure className="card card-product-grid">
+      <figure className="card card-product-grid bg-light-custom">
         <Link to={`/details/${props.id}`}>
           <div className="img-wrap">
-            <img src={props.imgUrl}/>
+            <img className="product-image" src={props.imgUrl}/>
           </div>
         </Link>
         <figcaption className="info-wrap border-top">
           <div className="price-wrap">
-          <strong className="price">${price}</strong>
+          <strong className="price text-dark-custom">${price}</strong>
           {discountHtml}
           </div>
-          <p className="title mb-2">{props.name}</p>
-          <p className="title mb-2">{stock > 0 ? `In stock: ${stock}` : `Out of Stock`}</p>
-          <a href="#" className="btn btn-primary">Add to cart</a>
-          <a href="#" className="btn btn-light btn-icon"> <i className="fa fa-heart"></i> </a>
+          <p className="title mb-2 text-dark-custom">{props.name}</p>
+          <p className="title mb-2 text-dark-custom">{stock > 0 ? `In stock: ${stock}` : `Out of Stock`}</p>
+          <a href="#" className="btn btn-success">Add to cart</a>
         </figcaption>
       </figure>
     </div>

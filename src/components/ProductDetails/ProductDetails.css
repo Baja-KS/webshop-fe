@@ -1,1 +1,113 @@
-.ProductDetails {}
+.details-body {
+    margin: 0;
+    padding: 0;
+}
+.details-body {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+.details-body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 1.7rem;
+    color: #222;
+}
+.product {
+    padding: 3rem 6rem;
+}
+.flex-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.product-image-container {
+    overflow: hidden;
+    border-radius: 0.4rem;
+}
+.product-image {
+    max-width: 25rem;
+    transition: all 0.4s;
+    display: block;
+    filter: saturate(0.4);
+}
+.product-image:hover {
+    transform: scale(1.1);
+}
+.product-name {
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: #d2d2d2;
+}
+.category {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #888;
+}
+.price {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #d2d2d2;
+}
+.price span {
+    font-size: 2.4rem;
+    margin-right: 0.5rem;
+    color: #d2d2d2;
+}
+.discount {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.discount span {
+    font-size: 1.5rem;
+}
+.stock {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    color: #d2d2d2;
+}
+.description-heading {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    color: #d2d2d2;
+}
+.product-description {
+    color: #d2d2d2;
+    line-height: 1.8;
+}
+.button {
+    background-color: #197141;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    color: #202020;
+}
+.button:hover {
+    background-color: #307f54;
+    color: #d2d2d2;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.137);
+    transition: all 0.3s;
+}
+.button:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem 0.1rem rgba(0, 0, 0, 0.274);
+    transition: all 0.3s;
+}
+.admin-buttons {
+    margin-left: auto;
+}
+.edit,
+.delete {
+    align-self: flex-start;
+}

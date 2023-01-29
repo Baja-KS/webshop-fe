@@ -12,7 +12,7 @@ const PerPage = (props) => {
     return (
         <article className="filter-group">
             <header className="card-header">
-                <a href="#" className="title" data-bs-toggle="collapse" data-bs-target="#collapse_aside3">
+                <a href="#" className="title text-light" data-bs-toggle="collapse" data-bs-target="#collapse_aside3">
                     <i className="icon-control fa fa-chevron-down"></i>  Per page
                 </a>
             </header>

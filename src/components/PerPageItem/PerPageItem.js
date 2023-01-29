@@ -12,7 +12,7 @@ const PerPageItem = (props) => {
     return (
         <label className="checkbox-btn">
             <input type="checkbox" checked={current === value} onChange={handler} />
-            <span className="btn btn-light"> {value} </span>
+            <span className="btn btn-gray-dark"> {value} </span>
         </label>
     );
 };

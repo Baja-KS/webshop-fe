@@ -48,17 +48,7 @@ const Shop = () => {
         onSearch();
     },[searchQuery,minPrice,maxPrice,perPage,page,selectedCategory]);
     return perPage && categories && products && (
-        <div className="home-section">
-                
-                 
-        <section className="bg-primary py-5">
-            <div className="container">
-                <h2 className="text-white">Big Tehc Only</h2>
-                <ol className="breadcrumb ondark mb-0">
-                <li className="breadcrumb-item active" aria-current="page">Catalog</li>
-                </ol>
-            </div> 
-        </section>
+        <div className="home-section text-light">
       
         
       
@@ -78,9 +68,7 @@ const Shop = () => {
             <CategoryFilterList categories={categories} state={{current:selectedCategory,update:updateSelectedCategory}}></CategoryFilterList>
 
             <PerPage state={{current:perPage,update:updatePerPage}} updatePage={updatePage} values={[1,5,10,15,20]}></PerPage>
-        
-            
-        
+
         </div> 
         
         
@@ -109,13 +97,8 @@ const Shop = () => {
             <div className='row'>
                 {products.map((item) => (<Product key={item.id} id={item.id} name={item.name} imgUrl={item.imgUrl} discount={item.discount} price={item.price} stock={item.stock}></Product>))}
             </div>
-          
-      
+
         <Pagination total={pageCount} current={page} handlers={{page:updatePage}}></Pagination>
-      
-      
-      
-      
       
         </main>
         </div> 
